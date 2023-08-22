@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">                      <!-- 'en'는 사용할 언어표시-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ESP-A </title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="/image/microphone.png" type="image/png">
+</head>
+<body>
+
+    <div class = "wrap">
+        <div class="intro_bg" id = "home-section">    <!--메인화면 백그라운드 배경 지정을 위해 이렇게 이름을 지음 -->
+            <div class="header">
+                <div class="Search_area">
+                    <form>
+                        <input type="search" placeholder="Search">
+                        <span> 검색 </span>
+                    </form>
+                </div>
+                <ul class="nav">
+                    <li> <a href="#home-section" class="btn" id = 'home'> Home </a></li>
+                    <li> <a href="#about-section" class="btn" id = 'about'> About </a></li>
+                    <li> <a href="#service-section" class="btn" id = 'service'> Service </a></li>
+                    <li> <a href="#contract-section" class="btn" id = 'contract'> Contact </a></li>
+                </ul>
+                              
+            </div>
+            <div class = 'intro_text'>
+                <h1> ESP-A </h1>
+                <h4 class="contents1"> 자신과 유명인의 목소리로 </h4>
+                <h4>다른노래를 불러보세요.</h4>
+            </div>
+        </div>
+        <!-- intro end (home)-->
+
+
+        <div class="main_text0" id = "about-section">
+            <h1>About</h1>
+            <div class = 'contents1'> 제품설명 </div>
+
+            <ul class = 'icons'>
+                <li>
+                    <div class="icon_img">
+                        <img src="image/fun1.png" width="136px" height="127px">
+                    </div>
+                    <div class="contents1_bold"> 기능1 </div>
+                    <div class="contents1"> 특징 샬라샬라 </div>
+                </li>
+                <li>
+                    <div class="icon_img">
+                        <img src="image/func2.png" width="136px" height="127px">
+                      </div>
+                      <div class="contents1_bold"> 기능2 </div>
+                      <div class="contents2"> 특징2 샬라샬라 </div>
+          
+                </li>
+                <li>
+                    <div class="icon_img">
+                        <img src="image/func3.png" width="136px" height="127px">
+                      </div>
+                      <div class="contents1_bold"> 기능3 </div>
+                      <div class="contents2"> 특징3 샬라샬라 </div>
+                </li>
+            </ul>
+        </div>
+        <!-- main text0 end -->
+
+        <!-- main text1 (3스크롤)start -->
+        <div class="main_text1" id="service-section">
+            <h1> SERVICE </h1>
+            
+            <div class = "contents1"> 이용방법1 </div>
+            
+            
+            <div class="service">
+                <h2> Noraebang for everyone </h2>
+                <audio  controls preload>
+                    <source src="" type="">
+                </audio>
+                    <form class="trans"  action="http://192.168.20.51:5021/file" method="post" encType="multipart/form-data">
+                        <label for="up_input" class="custom_upload">UPLOAD</label>
+                        <input id = "up_input" type="file" name="file"  style="display:none">
+                        <input type="submit" value="전송">
+                    </form>
+                        <!-- <li>File name</li>  -->
+                        <!-- <li> Result </li> -->
+
+            </div>
+        </div>
+        
+        <!-- main text2 (4스크롤)start -->
+        <div class="main_text2" id="contract-section">
+            <ul>
+                <li>
+                    <h1> Contact </h1>
+                    <h4> Gwangju Daesung Academy 1-3F, 92 Jebong-ro, Dong-gu, Gwangju </h4>
+                    <h4 class="em"> 대표자 이메일 </h4>
+                    <h4 class="ph"> 대표자 전화번호 </h4>
+                </li>
+                <li>
+                    <form action="">
+                        <label for="name">이름:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                
+                        <label for="email">이메일:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                
+                        <label for="suggestion" >건의 내용:</label><br>
+                        <textarea id="suggestion" name="suggestion" rows="4" cols="50" required></textarea><br><br>
+                
+                        <input type="submit" value="제출" class="subm">
+                    </form>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</body>
+</html>
